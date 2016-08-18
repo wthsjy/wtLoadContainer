@@ -23,7 +23,7 @@ app:noDataView： 没有数据的布局，默认为imageView
 
 
 
-<com.wt.load.container.core.WTLoadContainerView
+            <com.wt.load.container.core.WTLoadContainerView
                 android:id="@+id/wt_load_container1"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
