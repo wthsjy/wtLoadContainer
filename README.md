@@ -10,7 +10,7 @@ repositories {
     }
 }
 dependencies {
- compile 'com.wt.load.container.core:wtLoadContainerCore:更新中'
+ compile 'com.wt.load.container.core:wtLoadContainerCore:0.1'
 }
 
 ```
