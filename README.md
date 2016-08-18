@@ -15,9 +15,9 @@ dependencies {
 ####用法,类似 scrollView 
 `````
 app:childDataViewId：你的真实数据布局
-app:dataLoadingView： 加载中布局，默认为progeressbar
-app:networkErrorView： 网络异常布局，默认为imageView
-app:noDataView： 没有数据的布局，默认为imageView
+app:dataLoadingView： 加载中布局，默认为progeressbar   @layout/wt_load_detault_data_loading_view
+app:networkErrorView： 网络异常布局，默认为imageView   @layout/wt_load_detault_network_error_view
+app:noDataView： 没有数据的布局，默认为imageView       @layout/wt_load_detault_no_data_view
 `````
 ```
 
