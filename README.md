@@ -4,9 +4,15 @@
 
 ```gradle
 
+repositories {
+    maven {
+        url  "http://dl.bintray.com/mw258176257/maven" 
+    }
+}
 dependencies {
  compile 'com.wt.load.container.core:wtLoadContainerCore:更新中'
 }
+
 ```
 
 ###Demo
