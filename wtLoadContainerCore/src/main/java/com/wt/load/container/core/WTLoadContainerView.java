@@ -13,6 +13,7 @@ import android.widget.FrameLayout;
 public class WTLoadContainerView extends FrameLayout {
 
     private static final String TAG = WTLoadContainerView.class.getSimpleName();
+
     private Context mContext;
 
 
@@ -133,8 +134,6 @@ public class WTLoadContainerView extends FrameLayout {
         toggleNoDataView(false);
         // 隐藏 正在加载View
         toggleLoadingView(false);
-
-
         toggleChildDataView(true);
     }
 
@@ -166,13 +165,13 @@ public class WTLoadContainerView extends FrameLayout {
      * 显示 no data view
      */
     public void showNoDataView() {
+
         //隐藏网络异常的View
         toggleNetErrorView(false);
         // 隐藏 自定义数据View
         toggleChildDataView(false);
         // 隐藏 正在加载View
         toggleLoadingView(false);
-
         toggleNoDataView(true);
     }
 
@@ -201,8 +200,8 @@ public class WTLoadContainerView extends FrameLayout {
                 });
             }
             if (noDataView.getVisibility() != VISIBLE) {
-                noDataView.setVisibility(VISIBLE);
 
+                noDataView.setVisibility(VISIBLE);
             }
 
         } else {
@@ -218,16 +217,16 @@ public class WTLoadContainerView extends FrameLayout {
     }
 
     /**
-     * 显示 no data view
+     * 显示 net error view
      */
     public void showNetErrorView() {
-        //隐藏没有数据的View
-        toggleNoDataView(false);
         // 隐藏 自定义数据View
         toggleChildDataView(false);
+        //隐藏没有数据的View
+        toggleNoDataView(false);
+
         // 隐藏 正在加载View
         toggleLoadingView(false);
-
         toggleNetErrorView(true);
 
     }
@@ -280,7 +279,6 @@ public class WTLoadContainerView extends FrameLayout {
         toggleChildDataView(false);
         // 隐藏 网络异常View
         toggleNetErrorView(false);
-
         toggleLoadingView(true);
     }
 
@@ -304,6 +302,7 @@ public class WTLoadContainerView extends FrameLayout {
             }
             if (loadingView.getVisibility() != VISIBLE) {
                 loadingView.setVisibility(VISIBLE);
+
             }
         } else {
             if (loadingView == null) {
