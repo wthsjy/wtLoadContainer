@@ -5,7 +5,7 @@
 ```gradle
 
 dependencies {
- compile 'com.wt.load.container.core:wtLoadContainerCore:0.11'
+ compile 'com.wt.load.container.core:wtLoadContainerCore:1.0'
 }
 
 ```
